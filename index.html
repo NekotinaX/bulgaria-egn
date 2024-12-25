@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор на ЕГН</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Контейнер с описание и заглавие -->
+    <div class="description-container">
+        <h1>Генератор на възможни ЕГН-та</h1>
+        <p>С помощта на този генератор можете да генерирате възможни ЕГН-та на базата на вашата дата на раждане, пол и регион. Просто въведете необходимите данни и изберете съответните опции, за да получите списък с възможни ЕГН-та. Можете също така да търсите и подчертавате конкретно ЕГН, ако имате такова в предвид.</p>
+        <button id="learnMoreButton" onclick="window.location.href='index-en.html';">English</button>
+    </div>
+
+    <!-- Контейнер с форма за генериране на ЕГН -->
+    <div class="container">
+        <form id="egnForm">
+            <label for="birthDate">Дата на раждане:</label>
+            <input type="date" id="birthDate">
+
+            <label for="region">Регион (код):</label>
+            <select id="region">
+                <option value="000-043">Благоевград</option>
+                <option value="044-093">Бургас</option>
+                <option value="094-139">Варна</option>
+                <option value="140-169">Велико Търново</option>
+                <option value="170-183">Видин</option>
+                <option value="184-217">Враца</option>
+                <option value="218-233">Габрово</option>
+                <option value="234-281">Кърджали</option>
+                <option value="282-301">Кюстендил</option>
+                <option value="302-319">Ловеч</option>
+                <option value="320-341">Монтана</option>
+                <option value="342-377">Пазарджик</option>
+                <option value="378-395">Перник</option>
+                <option value="396-435">Плевен</option>
+                <option value="436-501">Пловдив</option>
+                <option value="502-527">Разград</option>
+                <option value="528-555">Русе</option>
+                <option value="556-575">Силистра</option>
+                <option value="576-601">Сливен</option>
+                <option value="602-623">Смолян</option>
+                <option value="624-721">София-град</option>
+                <option value="722-751">София-област</option>
+                <option value="752-789">Стара Загора</option>
+                <option value="790-821">Добрич (Толбухин)</option>
+                <option value="822-843">Търговище</option>
+                <option value="844-871">Хасково</option>
+                <option value="872-903">Шумен</option>
+                <option value="904-925">Ямбол</option>
+            </select>
+
+            <label for="gender">Пол:</label>
+            <select id="gender">
+                <option value="male">Мъж</option>
+                <option value="female">Жена</option>
+            </select>
+
+            <button type="button" id="generateEgn">Генерирай ЕГН-та</button>
+        </form>
+
+        <div class="search-container">
+            <input type="text" id="searchEgn" placeholder="Търси ЕГН...">
+            <button id="searchButton">Търси</button>
+        </div>
+
+        <ul id="egnList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

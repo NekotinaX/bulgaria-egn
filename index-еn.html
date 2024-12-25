@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGN Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Container with description and title -->
+    <div class="description-container">
+        <h1>Possible EGN Generator</h1>
+        <p>With this generator, you can generate possible EGN numbers based on your date of birth, gender, and region. Simply enter the required data and select the appropriate options to get a list of possible EGN numbers. You can also search and highlight a specific EGN if you have one in mind.</p>
+        <button id="learnMoreButton" onclick="window.location.href='index.html';">Bulgarian</button>
+
+    </div>
+
+    <!-- Container with EGN generation form -->
+    <div class="container">
+        <form id="egnForm">
+            <label for="birthDate">Date of Birth:</label>
+            <input type="date" id="birthDate">
+
+            <label for="region">Region (code):</label>
+            <select id="region">
+                <option value="000-043">Blagoevgrad</option>
+                <option value="044-093">Burgas</option>
+                <option value="094-139">Varna</option>
+                <option value="140-169">Veliko Tarnovo</option>
+                <option value="170-183">Vidin</option>
+                <option value="184-217">Vratsa</option>
+                <option value="218-233">Gabrovo</option>
+                <option value="234-281">Kardzhali</option>
+                <option value="282-301">Kyustendil</option>
+                <option value="302-319">Lovech</option>
+                <option value="320-341">Montana</option>
+                <option value="342-377">Pazardzhik</option>
+                <option value="378-395">Pernik</option>
+                <option value="396-435">Pleven</option>
+                <option value="436-501">Plovdiv</option>
+                <option value="502-527">Razgrad</option>
+                <option value="528-555">Ruse</option>
+                <option value="556-575">Silistra</option>
+                <option value="576-601">Sliven</option>
+                <option value="602-623">Smolyan</option>
+                <option value="624-721">Sofia-City</option>
+                <option value="722-751">Sofia-Region</option>
+                <option value="752-789">Stara Zagora</option>
+                <option value="790-821">Dobrich (Tolvukhin)</option>
+                <option value="822-843">Targovishte</option>
+                <option value="844-871">Haskovo</option>
+                <option value="872-903">Shumen</option>
+                <option value="904-925">Yambol</option>
+            </select>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <button type="button" id="generateEgn">Generate EGN</button>
+        </form>
+
+        <div class="search-container">
+            <input type="text" id="searchEgn" placeholder="Search EGN...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <ul id="egnList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
