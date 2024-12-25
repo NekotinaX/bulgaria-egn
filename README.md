@@ -28,5 +28,3 @@
 
 ## Примерен екран  
 ![Example Screenshot](https://raw.githubusercontent.com/NekotinaX/egn-generator/refs/heads/main/Screenshot.png)
-## Контакти  
-📧 Ако имате въпроси или предложения, можете да се свържете с мен на имейл: [your-email@example.com](mailto:your-email@example.com).  
